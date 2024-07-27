@@ -1,6 +1,3 @@
-Here's an updated description for your GitHub repository that includes the technologies you've used:
-
----
 
 ## Feed The Need - Food Donation Website
 
