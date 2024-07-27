@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Need - About Us</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .coverc {
+            width: 100%;
+            height: 400px;
+            background: url('img/about3.jpg') no-repeat;
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            padding-top: 8rem;
+        }
+        .title {
+            font-size: 38px;
+            text-align: center;
+            align-items: center;
+        }
+        .para p {
+            font-size: 23px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .map {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        #map {
+            width: 800px;
+            height: 600px;
+            border: 0;
+        }
+        @media (max-width: 767px) {
+            .para p {
+                font-size: 16px;
+            }
+            #pptslide, #map, #overview {
+                height: 300px;
+                width: 100%;
+            }
+            .title {
+                font-size: 28px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Feed The <b style="color: #191970;">Need</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.php">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+    <p class="title">"Welcome to <u>Feed The Need</u>"</p>
+    <br><br><br>
+
+    <p class="heading">About us</p>
+    <div class="para">
+        <p>We are a team of passionate individuals committed to addressing the issue of food waste in India. Our goal is to create a system that connects food donors with charities and NGOs, while also reducing the environmental impact of food waste.</p>
+    </div>
+    <br><br>
+
+    <div class="map">
+        <p style="font-size:30px;">Location</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.280250998328!2d77.5114551748388!3d12.825158287476935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41057dd66abf%3A0xfda823a3ca1775ea!2sDayananda%20Sagar%20Academy%20of%20Technology%20and%20Management%20(DSATM)!5e0!3m2!1sen!2sin!4v1720375798301!5m2!1sen!2sin" 
+                width="800" 
+                height="600" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                id="map">
+        </iframe>
+    </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

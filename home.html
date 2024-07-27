@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Need - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-bar ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        .nav-bar ul li {
+            margin-left: 1rem;
+        }
+        .nav-bar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .banner {
+            background-color: #191970;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .banner a {
+            display: inline-block;
+            background-color: white;
+            color: #191970;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .content, .photo, .deli {
+            padding: 2rem;
+            text-align: center;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        footer a {
+            color: white;
+        }
+        .social {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        .social li {
+            margin-right: 1rem;
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger .line {
+            width: 30px;
+            height: 3px;
+            background: #333;
+            margin: 6px 0;
+        }
+        @media (max-width: 768px) {
+            .nav-bar {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+            .nav-bar.active {
+                display: block;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #f8f8f8;
+            }
+            .nav-bar.active ul {
+                flex-direction: column;
+            }
+            .nav-bar.active ul li {
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Feed The <b style="color: #191970;">Need</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.php">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Welcome to Feed The Need</h1>
+        <p>Help us make a difference in people's lives</p>
+        <a href="fooddonateform.php">Donate Food</a>
+    </section>
+
+    <div class="content">
+        <p style="font-size: 23px;">
+            "Cutting food waste is a delicious way of saving money, helping to feed the world and protect the planet." 
+        </p>
+    </div>
+
+    <div class="photo">
+        <h2>Our Works</h2>
+        <p style="font-size: 28px;">"Look what we can do together."</p>
+        <div class="wrapper">
+            <div class="box"><img src="img/p1.jpeg" alt="Our work 1"></div>
+            <div class="box"><img src="img/p4.jpeg" alt="Our work 2"></div>
+            <div class="box"><img src="img/p3.jpeg" alt="Our work 3"></div>
+        </div>
+    </div>
+
+    <div class="deli">
+        <h2>DOOR PICKUP</h2>
+        <p class="para">"Your donated Food will be collected immediately and distributed to needy people"</p>
+        <img src="img/delivery.gif" alt="Door pickup" style="max-width: 100%; height: auto;">
+    </div>
+
+    <footer>
+        <div>
+            <h3>About us</h3>
+            <p>Our Goal is to stop any food wastage and feed it to needy people.</p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>(+00) 0000 000 000</p>
+            <p><a href="mailto:FeedTheNeed@gmail.com">FeedTheNeed@gmail.com</a></p>
+        </div>
+        <div>
+            <h3>Follow us</h3>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/TheAkshayaPatraFoundation/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/globalgiving"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/charitism/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>&copy; 2023 Feed The Need. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            const navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

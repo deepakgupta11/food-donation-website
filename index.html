@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Need - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .logo b {
+            color: #191970;
+        }
+
+        .para {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .login-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .login-option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: #191970;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .login-option:hover {
+            background-color: #13134d;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(25, 25, 112, 0.3);
+        }
+
+        .login-option i {
+            font-size: 1.2rem;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .container {
+                padding: 2rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .para {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Feed The <b>Need</b></h1>
+        <p class="para">Choose your login type</p>
+        <div class="login-options">
+            <a href="signup.php" class="login-option">
+                <i class="fas fa-user"></i>
+                <span>User Login</span>
+            </a>
+            <a href="admin/signup.php" class="login-option">
+                <i class="fas fa-user-shield"></i>
+                <span>Admin Login</span>
+            </a>
+            <a href="delivery/deliverysignup.php" class="login-option">
+                <i class="fas fa-motorcycle"></i>
+                <span>Delivery Login</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
